@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+
+body {
+  color: #fff;
+  font-family: 'Cinzel', serif;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------------------------------------Header */
+
+header {
+    height: 120px;
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    position: fixed;
+}
+
+#logo {
+  float: left;
+  margin-left: 20px;
+}
+
+#menu {
+  font-size: 110%;
+  list-style-type: none;
+  letter-spacing: 4px;
+}
+
+#menu li {
+  float: right;
+  margin-right: 30px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu a:hover {
+  border-bottom: 1px solid #777777;
+}
+
+.active {
+  border-bottom: 1px solid #777777;
+}
+
+#logo, #menu {
+  line-height:75px;
+}
+
+/* ---------------------------------------------------------------------Header-Image */
+
+.header-img {
+    background: url("../images/header/new.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.5%;
+}
+
+/* ---------------------------------------------------------------------About-Image */
+
+.about-img {
+    height: 450px;
+    background: url("../images/about/download-1.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.5%;
+}
+
+/* ---------------------------------------------------------------------About-Content */
+
+.about-content-container h2 {
+    margin-left: 170px;
+    padding-bottom: 20px;
+    padding-top: 120px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.about-content-container p {
+    width: 350px;
+    margin-left: 80px;
+}
+
+/* ----------------------------------------------------------------------Music and Gallery Background */
+
+.music-bk {
+  background: url("../images/music/music-bk.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-bk {
+  background: url("../images/music/music-bk.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56.5%;
+}
+
+
+
+/* ----------------------------------------------------------------------Music Content */
+
+#album {
+  column-count: 3;
+  clear: both;
+  margin-left: 60px;
+}
+
+.music {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.music h2 {
+    font-size: 50px;
+}
+
+#album a img {
+  margin-bottom: 20px;
+}
+
+.hover-album:hover {
+    opacity: 0.25;
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+/* ----------------------------------------------------------------------Gallery Content */
+
+.gallery-bk {
+    padding: 50px 60px 200px 60px;
+}
+
+.gallery-bk h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.gallery-modal {
+    background-color: transparent;
+}
+
+/* ----------------------------------------------------------------------Photos Content */
+
+#photo1,
+#photo2,
+#photo3,
+#photo4 {
+    height: 300px;
+    width: 300px;
+    border-radius: 15%;
+    margin-right: 10px;
+}
+
+.gallery-bk img {
+    margin-left: 15px;
+}
+
+.modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo:hover {
+    opacity: 0.25;
+    transition: transform 2s ease, opacity .5s ease-out;
+}
+
+
+/* ---------------------------------------------------------------------Tour-Content */
+.tour-bk {
+  background-image: url("https://snworksceo.imgix.net/car/1cb7f093-87d7-4a02-beca-2cff98496dda.sized-1000x1000.jpg?w=1000"); 
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  padding-top: 270px;
+  overflow: hidden;
+}
+
+
+#tour div {
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 19%;
+  height: 300px;
+  padding:30px 0 0 10px;
+  float: left;
+  text-align: center;
+  margin:2px;
+  }
+
+  #tour h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  #tour h3 {
+      padding-top: 10px;
+      font-size: 20px;
+  }
+
+  #tour div button {
+      margin-top: 15px;
+  }
+
+/* ---------------------------------------------------------------------Enquiries-Content */
+
+#enquiries {
+    padding-bottom: 60px;
+    background-image: url("https://media.globalcitizen.org/thumbnails/b3/75/b3758e0d-2565-4f58-a244-f40a911b6031/gc_festival_coldplay_authorized_photo-hero.jpg__1264x568_q85_crop_subsampling-2.jpg");
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    overflow: hidden;
+    }
+
+.enquiries-form {
+  margin-top: 150px;
+  color:#fff;
+  background-color: rgba(60, 60, 60, 0.6);
+
+  max-width: 400px;
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.enquiries-form h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+
+.text-input {
+   background:transparent;
+   color:#fafafa;
+   width:100%;
+   height: 25px;
+   margin: 5px 0 20px 0;
+   border: 1px solid #fafafa;
+   border-radius: 2px;
+ }
+
+ .text-input:hover {
+   border-color: rgba(156, 115, 3);
+ }
+
+ .enquire-button {
+   margin-top: 20px;
+   border-radius: 2px;
+   padding: 15px 20px 15px 20px;
+   text-align: center;
+   font-size: 100%;
+   background-color: rgba(156, 115, 3);
+   color: #fafafa;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .enquire-button:hover {
+   background-color: #fafafa;
+   color:rgba(156, 115, 3);
+ }
+
+
+
+/* ---------------------------------------------------------------------Footer-Content */
+
+/* .footer {
+    background-color: #525252;
+    color: #fafafa;
+}
+ .social-networks {
+    text-align: center;
+  }
+
+  .social-networks li {
+    display: inline;
+  }
+
+  .social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color:#777777;
+  } */
+
+footer {
+    background: url("../images/music/music-bk.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fafafa;
+    height: 220px;
+    margin: 0;
+}
+
+.social h4 {
+    text-align: center;
+}
+
+.col-4 h4 {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.social-links {
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: rgba(156, 115, 3);
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+.subscribe-button {
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgba(156, 115, 3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe-button:hover {
+   background-color: rgba(156, 115, 3);
+   color: #fafafa;
+ }
+
+.modal-body h3,
+.modal-body h5 {
+    color: black;
+    text-align: center;
+}
+
+
+/* ---------------------------------------------------------------------Media Queries */
+@media only screen and (max-width: 1393px) {
+    #menu li {
+        font-size: 15px;
+    }
+
+    .menu-button {
+        float: right;
+        margin-right: 30px;
+        margin-top: 36px;
+    }
+
+    #tour div {
+        width:100%;
+        clear: both;
+        height: 150%;
+        border-style:solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #fff;
+        padding: 0;
+    }
+
+    #tour h3 {
+      padding-top: 10px;
+      font-size: 13px;
+  }
+
+
+}
+
+@media screen and (max-width: 943px) {
+
+    .menu-button {
+        float: right;
+        margin-top: 36px;
+    }
+
+    #logo {
+        margin-left: 16px;
+        position: fixed;
+    }
+
+    #menu li {
+        float: left;
+        column-count: 3;
+        margin-top: 20px;
+    }
+
+  .header-img {
+    height: 550px;
+    padding-top: 500px;
+    margin: auto;
+  }
+
+  .about-img {
+      height: 550px;
+  }
+
+  .about-content-container h2 {
+      text-align: center;
+      margin: 0;
+  }
+
+  .music {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    }
+
+  #album {
+    column-count: 2;
+    clear: both;
+    margin-left: 20px;
+  }
+
+  #album a img {
+    width: 150px;
+    height: 150px;
+  }
+
+  #photo1,
+  #photo2,
+  #photo3,
+  #photo4 {
+    height: 300px;
+    width: 300px;
+    border-radius: 15%;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4 {
+      height: 400px;
+    width: 400px;
+
+  }
+
+  .modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .gallery-bk img {
+    margin-left: 0px;
+  }
+
+  #tour h3 {
+      padding-top: 10px;
+      font-size: 15px;
+  }
+
+  #tour h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 25px;
+  }
+
+ footer {
+     height: 300px;
+ }
+ 
+ .social-links {
+     margin-top: 50px;
+ }
+}
